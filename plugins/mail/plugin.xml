@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="mailapp.entrypoints"
+         point="org.eclipse.rap.ui.entrypoint">
+      <entrypoint
+            path="/mail"
+            applicationId="mail.mailapp"
+            id="mailapp.entrypoint">
+      </entrypoint>
+   </extension>
+   <extension
+         id="mail.mailapp"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            thread="main"
+            cardinality="singleton-global"
+            visible="true">
+         <run
+               class="mail.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RAP Perspective"
+            class="mail.Perspective"
+            id="mail.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            allowMultiple="true"
+            name="Message"
+            icon="icons/sample2.gif"
+            class="mail.View"
+            id="mail.view">
+      </view>
+      <view
+            name="Mailboxes"
+            icon="icons/sample3.gif"
+            class="mail.NavigationView"
+            id="mail.navigationView">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            name="Mail"
+            id="mail.category">
+      </category>
+      <command
+            name="Open Mailbox"
+            description="Opens a mailbox"
+            categoryId="mail.category"
+            id="mail.open">
+      </command>
+      <command
+            name="Open Message Dialog"
+            description="Opens a message dialog"
+            categoryId="mail.category"
+            id="mail.openMessage">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="mail.mailapp"
+            name="mail_product">
+      </product>
+   </extension>
+   <extension
+         id="mail_product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="mail.mailapp"
+            name="mail_product">
+      </product>
+   </extension>
+
+</plugin>

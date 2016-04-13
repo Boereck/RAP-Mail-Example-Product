@@ -1,1 +1,1 @@
-"# RAP-Mail-Example-Product" 
+# RAP-Mail-Example-Product
