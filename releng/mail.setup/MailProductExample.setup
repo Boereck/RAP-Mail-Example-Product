@@ -44,10 +44,6 @@
       defaultValue="Mars"
       storageURI="scope://Workspace"/>
   <setupTask
-      xsi:type="setup.p2:P2Task">
-    <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
-  </setupTask>
-  <setupTask
       xsi:type="git:GitCloneTask"
       id="git.clone"
       remoteURI="Boereck/RAP-Mail-Example-Product">
@@ -80,12 +76,8 @@
           name="org.eclipse.rap.feature.feature.group"
           versionRange="[3.0.2.20160201-1220,3.0.2.20160201-1220]"/>
       <sourceLocator
-          rootFolder="${git.clone.location}"
-          locateNestedProjects="true">
-        <predicate
-            xsi:type="predicates:RepositoryPredicate"
-            project="mail.feature"/>
-      </sourceLocator>
+          rootFolder="${git.clone.location}/**"
+          locateNestedProjects="true"/>
       <repositoryList
           name="RAP">
         <repository
