@@ -77,13 +77,13 @@
           name="org.eclipse.rap.feature.feature.group"
           versionRange="[3.0.2.20160201-1220,3.0.2.20160201-1220]"/>
       <sourceLocator
-          rootFolder="${git.clone.location}/plugins"
+          rootFolder="${git.clone.location/plugins}"
           locateNestedProjects="true"/>
       <sourceLocator
-          rootFolder="${git.clone.location}/features"
+          rootFolder="${git.clone.location/features}"
           locateNestedProjects="true"/>
       <sourceLocator
-          rootFolder="${git.clone.location}/releng"
+          rootFolder="${git.clone.location/releng}"
           locateNestedProjects="true"/>
       <repositoryList
           name="RAP 3">
