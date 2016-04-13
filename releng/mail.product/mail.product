@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="mail_product" uid="mail.product" id="mail.mail_product" application="mail.mailapp" version="1.0.0" useFeatures="true" includeLaunchers="true">
+<product name="mail_product" uid="mail.product" version="1.0.0" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
+      <programArgs>-console
+      </programArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
@@ -28,7 +30,6 @@
 
    <features>
       <feature id="org.eclipse.rap.equinox.target.feature" version="3.0.3.20160209-0600"/>
-      <feature id="org.eclipse.rap.feature" version="3.0.2.20160201-1220"/>
       <feature id="mail.feature" version="1.0.0.qualifier"/>
    </features>
 

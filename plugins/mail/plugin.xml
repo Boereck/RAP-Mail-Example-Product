@@ -66,20 +66,5 @@
             id="mail.openMessage">
       </command>
    </extension>
-   <extension
-         point="org.eclipse.core.runtime.products">
-      <product
-            application="mail.mailapp"
-            name="mail_product">
-      </product>
-   </extension>
-   <extension
-         id="mail_product"
-         point="org.eclipse.core.runtime.products">
-      <product
-            application="mail.mailapp"
-            name="mail_product">
-      </product>
-   </extension>
 
 </plugin>
