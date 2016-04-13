@@ -68,7 +68,8 @@
       xsi:type="setup.targlets:TargletTask">
     <targlet
         name="${scope.project.label}"
-        activeRepositoryList="${eclipse.target.platform}">
+        activeRepositoryList="RAP 3"
+        includeAllPlatforms="true">
       <requirement
           name="org.eclipse.rap.equinox.target.feature.feature.group"
           versionRange="[3.0.3.20160209-0600,3.0.3.20160209-0600]"/>
@@ -79,7 +80,7 @@
           rootFolder="${git.clone.location}/**"
           locateNestedProjects="true"/>
       <repositoryList
-          name="RAP">
+          name="RAP 3">
         <repository
             url="http://download.eclipse.org/rt/rap/3.0"/>
       </repositoryList>
