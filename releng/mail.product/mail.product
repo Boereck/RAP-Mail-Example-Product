@@ -30,6 +30,7 @@
 
    <features>
       <feature id="org.eclipse.rap.equinox.target.feature" version="3.0.3.20160209-0600"/>
+      <feature id="org.eclipse.emf.rap" version="2.11.0.v20150601-0402"/>
       <feature id="mail.feature" version="1.0.0.qualifier"/>
    </features>
 

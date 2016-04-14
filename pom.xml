@@ -10,6 +10,7 @@
 		<tycho-version>0.24.0</tycho-version>
 		<rap-update-site>http://download.eclipse.org/rt/rap/3.0</rap-update-site>
 		<eclipse-platform>http://download.eclipse.org/eclipse/updates/4.5</eclipse-platform>
+		<emf-update-site>http://download.eclipse.org/modeling/emf/emf/updates/2.11/</emf-update-site>
 	</properties>
 	
 	<modules>
@@ -28,6 +29,11 @@
 			<id>eclipse platform</id>
 			<layout>p2</layout>
 			<url>${eclipse-platform}</url>
+		</repository>
+		<repository>
+			<id>emf</id>
+			<layout>p2</layout>
+			<url>${emf-update-site}</url>
 		</repository>
 	</repositories>
 	
